@@ -805,10 +805,10 @@ H5P.DragText = (function ($, Question, ConfirmationDialog) {
       widestDragagble = width > widestDragagble ? width : widestDragagble;
 
       // Measure how big truncated draggable should be
-      if ($tmp.text().length >= 20) {
-        $tmp.html(draggable.getShortFormat());
-        width = $tmp.width();
-      }
+//      if ($tmp.text().length >= 20) {
+//        $tmp.html(draggable.getShortFormat());
+//        width = $tmp.width();
+//      }
 
       if (width + staticPadding > widest) {
         widest = width + staticPadding;

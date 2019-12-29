@@ -21,9 +21,9 @@ H5P.TextDraggable = (function ($) {
 
     self.shortFormat = self.text;
     //Shortens the draggable string if inside a dropbox.
-    if (self.shortFormat.length > 20) {
-      self.shortFormat = self.shortFormat.slice(0, 17) + '...';
-    }
+//    if (self.shortFormat.length > 20) {
+//      self.shortFormat = self.shortFormat.slice(0, 17) + '...';
+//    }
   }
 
   Draggable.prototype = Object.create(H5P.EventDispatcher.prototype);

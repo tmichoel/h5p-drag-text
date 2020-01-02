@@ -362,7 +362,7 @@ H5P.DragText = (function ($, Question, ConfirmationDialog) {
   */
   DragText.prototype.changeLayoutToFitWidth = function () {
     var self = this;
-    self.addDropzoneWidth();
+//    self.addDropzoneWidth();
 
     //Find ratio of width to em, and make sure it is less than the predefined ratio, make sure widest draggable is less than a third of parent width.
     if ((self.$inner.width() / parseFloat(self.$inner.css("font-size"), 10) > 43) && (self.widestDraggable <= (self.$inner.width() / 3))) {
@@ -762,7 +762,7 @@ H5P.DragText = (function ($, Question, ConfirmationDialog) {
     self.$draggables.appendTo(self.$taskContainer);
     self.$wordContainer.appendTo(self.$taskContainer);
     self.$taskContainer.appendTo($container);
-    self.addDropzoneWidth();
+//    self.addDropzoneWidth();
   };
 
   /**
@@ -798,10 +798,10 @@ H5P.DragText = (function ($, Question, ConfirmationDialog) {
         'width': 'auto',
         'padding': 0,
         'margin': 0
-      }).html(draggable.getAnswerText())
-        .appendTo($draggableElement.parent());
-      var width = $tmp.outerWidth();
-
+      }).html(draggable.getAnswerText());
+//        .appendTo($draggableElement.parent());
+//      var width = $tmp.outerWidth();
+	var width = $tmp.width();
       widestDragagble = width > widestDragagble ? width : widestDragagble;
 
       // Measure how big truncated draggable should be
